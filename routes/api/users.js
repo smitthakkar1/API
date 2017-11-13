@@ -4,7 +4,7 @@ var router = require('express').Router();
 var User = mongoose.model('User');
 var auth = require('../auth');
 
-router.use('/', require('./users'));
+//router.use('/', require('./users'));
 
 router.post('/users', function (req,res,next) {
    var user = new User();
